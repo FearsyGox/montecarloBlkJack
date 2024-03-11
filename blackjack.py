@@ -84,10 +84,16 @@ def blackjack_game(infinite):
             return True
 
 
-    
+# Tempory Main system of the game.
+# player = True would be infinite system 
+# player = False would be 52 cards system 
+
 player = bool(False)
+
+# The actual Game
 gameresult = blackjack_game(player)
 
+# Displays who wins
 if gameresult == True:
     print("The Player Wins")
 else:
